@@ -1,7 +1,7 @@
 from django.http import HttpRequest, HttpResponse
 from .models import User
 from .serializer import UserSerializer
-from rest_framework import generics
+from rest_framework import generics # type: ignore
 
 # user by  id - get, update, delete
 class UserDetail(generics.RetrieveUpdateDestroyAPIView):
